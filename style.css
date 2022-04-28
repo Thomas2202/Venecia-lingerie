@@ -37,7 +37,11 @@ ul {
 }
 
 /* NAV LEFT */
-
+.div-nav{
+    width: 20px;
+    height: 20px;
+    border: solid 1px black;
+}
 
 /* SHOWCASE */
 hr {
@@ -281,36 +285,4 @@ hr {
 
 .cards-main p {
     text-align: center;
-}
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 480px) {
-    .container {
-        width: 100%;
-    }
-
-    .header {
-        width: 100%;
-    }
-
-    .nav-main {
-        font-size: 10px;
-    }
-
-    .social {
-      
-    }
-
-    .social p {
-        font-size: 15px;
-    }
-
-    .form {
-        width: 300px;
-    }
-
-    .quienes-somos {
-        width: 95%;
-    }
-
 }
