@@ -10,6 +10,7 @@ body {
     background: rgb(255, 209, 209);
     color: black;
     font-size: 16px;
+    position: relative;
 }
 
 a {
@@ -24,56 +25,19 @@ ul {
 /* BODY */
 .header{
     background: #f1c3c3;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
 }
 
 /* NAVEGATION */
-.nav-main {
-   display: flex;
-   padding-top: 10px;
-   align-items: center;
-   font-size: 25px;
-}
-
-.logo{
-    width: 65px;
-    height: 65px;
-    border-radius: 33px;
+.container-fluid a img {
+    border-radius: 65px;
     overflow: hidden;
-    margin-left: 20px;
-}
-
-.nav-logo {
-    width: 65px;
-    height: 65px;
-    align-items: center;
 }
 
 /* NAV LEFT */
-.nav-main ul {
-    display: flex;
-    justify-content: center;
-}
 
-.nav-main ul li {
-    padding: 10px;
-}
-
-.nav-main ul li a {
-    padding: 10px 10px 0 10px;
-}
-
-.nav-main ul li a:hover {
-    border-bottom: 2px solid black;
-}
-
-.nav-main ul.nav-menu {
-    flex: 1;
-}
 
 /* SHOWCASE */
 hr {
@@ -103,6 +67,7 @@ hr {
     font-size: 15px;
     border: 1px solid white;
     margin: 10px 0;
+     background-image: linear-gradient(#f1c3c3, rgb(228, 222, 222)); 
 }
 
 .btn:hover {
@@ -143,35 +108,40 @@ hr {
 
 .links-social a {
     margin: 0 30px;
+    
 }
+
+ .links-social a:hover {
+    margin: 0 30px;
+    color: #f1c3c3;
+    transition: 2s;
+    
+} 
 
 .links-social img {
     height: 3rem;
+    
 }
 
 /* CATALOGO */
-.catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    overflow: scroll;
-}
-
-.pics-catalogos{
-    display: flex;
-    margin: auto;
+.pics-catalogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .pics-catalogos img {
-    height: 500px;
-    margin: 15px; 
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.cards-catalogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.pics-catalogos h4 {
+    text-align: center;
+}
+
+.pics-catalogos h4:hover{
+    text-decoration: underline;
 }
 
 .h1Catalogo{
@@ -179,7 +149,8 @@ hr {
     margin: auto;
     text-align: center;
     padding: 1px;
-    border-bottom: 1px solid;
+    text-decoration: underline;
+    margin-bottom: 20px;
 }
 
 /* CONTACT */
@@ -271,4 +242,75 @@ hr {
     background: rgb(152, 210, 170);
     overflow: hidden;
     text-align: center;
+}
+
+.card-banner{
+    width: 100%;
+    background: url(./img/banner.jpg) no-repeat center center/cover;
+    height: 350px;
+    margin: 30px 0 20px 0;
+}
+
+.banner-content{
+    width: 40%;
+    padding: 90px 0 0 20px;
+    color: black;
+    font-size: 14px;
+}
+
+/* GRID */
+.cards-main{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background: #f1c3c3;
+}
+
+.cards-main img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.cards-main h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cards-main p {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .nav-main {
+        font-size: 10px;
+    }
+
+    .social {
+      
+    }
+
+    .social p {
+        font-size: 15px;
+    }
+
+    .form {
+        width: 300px;
+    }
+
+    .quienes-somos {
+        width: 95%;
+    }
+
 }
