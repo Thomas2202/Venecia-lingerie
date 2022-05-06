@@ -21,7 +21,7 @@
     font-size: 15px;
     border: 1px solid white;
     margin: 10px 0;
-    background-image: linear-gradient(#f1c3c3, rgb(228, 222, 222));
+    background-image: linear-gradient($color-header, rgb(228, 222, 222));
      &:hover {
         opacity: .8;
     }
@@ -66,4 +66,10 @@
     padding: 90px 0 0 20px;
     color: black;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 425px) {
+    .banner-content h2{
+        font-size: 15px;
+    }
 }
