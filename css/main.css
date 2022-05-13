@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap");
+/* MAPS */
+/* EXTEND */
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap");
+.cards-main img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-top: 25px; }
+
+/* MIXIN */
 * {
   padding: 0;
   margin: 0;
@@ -26,12 +35,15 @@ body {
 .showcase {
   width: 100%;
   height: 550px;
-  background: url(../../img/showcase1.jpg) no-repeat center center/cover;
+  /* background: url(../../img/showcase1.jpg) center center/cover; */
+  /* Sigue sin funcionar el barckground image.*/
+  background: black;
   padding-bottom: 50px;
   display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   color: white; }
 
 .btn {
@@ -56,12 +68,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   background: #f1c3c3; }
-
-.cards-main img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  margin-top: 25px; }
 
 .cards-main h3 {
   font-size: 20px;

@@ -1,7 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap');
 
 $color-body: rgb(255, 209, 209);
-
 $color-texto: white;
-
 $color-header: #f1c3c3;
+
+/* MAPS */
+$tamanio-tipografia:(
+    titulos: 24px,
+    subtitulos: 20px,
+    parrafos: 14px,
+    letra-chica: 12px,
+    showcase: 15px,
+    mobile: 15px,
+);
+
+$colores:(
+    background: rgb(255, 209, 209),
+    texto: white,
+    header: #f1c3c3,
+);
+
+
+/* EXTEND */
+%cards-img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 25px;
+}
+
+
+
+/* MIXIN */
+@mixin flexbox ($flex-direction, $justify, $align){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+}

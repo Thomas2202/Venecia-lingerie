@@ -1,12 +1,12 @@
 .showcase {
     width: 100%;
     height: 550px;
-    background: url(../../img/showcase1.jpg) no-repeat center center/cover;
+    /* background: url(../../img/showcase1.jpg) center center/cover; */
+    /* Sigue sin funcionar el barckground image.*/
+    background: black;
     padding-bottom: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    @include flexbox (column, flex-end, center);
     color: $color-texto;
 }
 
@@ -37,14 +37,11 @@
 }
 
 .cards-main img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    margin-top: 25px;
+    @extend %cards-img
 }
 
 .cards-main h3 {
-    font-size: 20px;
+    font-size: map-get($map: $tamanio-tipografia, $key: subtitulos );
     margin: 10px 0;
     text-align: center;
 }
@@ -65,11 +62,11 @@
     width: 40%;
     padding: 90px 0 0 20px;
     color: black;
-    font-size: 14px;
+    font-size: map-get($map: $tamanio-tipografia, $key: parrafos );
 }
 
 @media only screen and (max-width: 425px) {
     .banner-content h2{
-        font-size: 15px;
+        font-size: map-get($map: $tamanio-tipografia, $key: mobile );
     }
 }
