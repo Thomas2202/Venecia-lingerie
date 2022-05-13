@@ -29,8 +29,6 @@ $colores:(
     margin-top: 25px;
 }
 
-
-
 /* MIXIN */
 @mixin flexbox ($flex-direction, $justify, $align){
     display: flex;
