@@ -1,0 +1,29 @@
+/* CATALOGO */
+.pics-catalogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pics-catalogos img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pics-catalogos h4 {
+    text-align: center;
+}
+
+.pics-catalogos h4:hover{
+    text-decoration: underline;
+}
+
+.h1Catalogo{
+    width: 12%;
+    margin: auto;
+    text-align: center;
+    padding: 1px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
