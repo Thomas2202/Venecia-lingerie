@@ -33,7 +33,7 @@ body {
   top: 0;
   margin-bottom: 20px; }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%; }
