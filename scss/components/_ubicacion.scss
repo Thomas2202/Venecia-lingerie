@@ -14,5 +14,8 @@
 
 .iframe-ubicacion{
     width: 90%;
-    height: 400px;
+    height: 500px;
+    @media only screen and (max-width: 1024px){
+        height: 300px;
+    }
 }

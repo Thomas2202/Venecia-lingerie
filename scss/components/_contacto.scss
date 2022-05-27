@@ -33,6 +33,7 @@
     font-size: 17px;
     border: none;
     background: rgb(255, 217, 217);
+    border-radius: 10px;
 }
 
 .form textarea{
@@ -43,9 +44,21 @@
 }
 
 #btn-form{
-    background: rgb(255, 217, 217);
-    padding: 7px;
+    cursor: pointer;
     width: 30%;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgb(255, 209, 209);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px;
+    background-image: linear-gradient($color-header, rgb(228, 222, 222));
+     &:hover {
+        opacity: .8;
+    }
 }
 
 #btn-form:hover {
