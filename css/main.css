@@ -249,27 +249,103 @@ ul {
 
 .iframe-ubicacion {
   width: 90%;
-  height: 500px; }
-  @media only screen and (max-width: 1024px) {
+  height: 500px;
+  border-radius: 20px; }
+  @media only screen and (max-width: 1440px) {
     .iframe-ubicacion {
       height: 300px; } }
 
 /* ABOUT US */
 .quienes-somos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 20px; }
-
-.quienes-somos img {
-  width: 100%;
-  height: 400px; }
-
-.quienes-somos-box {
-  border: solid 1px black;
-  margin: 10px;
-  border-radius: 20px;
-  background: #98d2aa;
-  overflow: hidden;
-  text-align: center; }
+  flex-direction: row; }
+  @media only screen and (max-width: 425px) {
+    .quienes-somos {
+      flex-direction: column; } }
+  .quienes-somos-box {
+    border-radius: 20px;
+    width: 600px;
+    height: 400px;
+    margin-left: 20px;
+    background: linear-gradient(to top, #f1c3c3, #ffdde1); }
+    @media only screen and (max-width: 1440px) {
+      .quienes-somos-box {
+        width: 500px;
+        height: 400px; } }
+    @media only screen and (max-width: 768px) {
+      .quienes-somos-box {
+        width: 400px;
+        height: 300px; } }
+    @media only screen and (max-width: 425px) {
+      .quienes-somos-box {
+        width: 380px;
+        height: 200px;
+        margin-top: 10px; } }
+    @media only screen and (max-width: 375px) {
+      .quienes-somos-box {
+        width: 340px;
+        height: 200px;
+        margin-top: 10px; } }
+    @media only screen and (max-width: 320px) {
+      .quienes-somos-box {
+        width: 280px;
+        height: 250px; } }
+  .quienes-somos-img {
+    display: flex;
+    justify-content: center; }
+  .quienes-somos-img img {
+    margin-left: 20px;
+    border-radius: 500px;
+    height: 600px;
+    width: 600px; }
+    @media only screen and (max-width: 1440px) {
+      .quienes-somos-img img {
+        height: 400px;
+        width: 400px; } }
+    @media only screen and (max-width: 1024px) {
+      .quienes-somos-img img {
+        width: 300px;
+        height: 300px; } }
+    @media only screen and (max-width: 768px) {
+      .quienes-somos-img img {
+        width: 250px;
+        height: 250px; } }
+    @media only screen and (max-width: 425px) {
+      .quienes-somos-img img {
+        width: 200px;
+        height: 200px; } }
+    @media only screen and (max-width: 375px) {
+      .quienes-somos-img img {
+        width: 200px;
+        height: 200px; } }
+    @media only screen and (max-width: 320px) {
+      .quienes-somos-img img {
+        width: 150px;
+        height: 150px; } }
+  .quienes-somos-box h2 {
+    text-align: center;
+    padding-top: 20px; }
+    @media only screen and (max-width: 425px) {
+      .quienes-somos-box h2 {
+        font-size: 16px; } }
+    @media only screen and (max-width: 375px) {
+      .quienes-somos-box h2 {
+        font-size: 14px; } }
+  .quienes-somos-box p {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px; }
+    @media only screen and (max-width: 1440px) {
+      .quienes-somos-box p {
+        font-size: 18px; } }
+    @media only screen and (max-width: 768px) {
+      .quienes-somos-box p {
+        font-size: 13px; } }
+    @media only screen and (max-width: 425px) {
+      .quienes-somos-box p {
+        font-size: 10px;
+        padding-top: 10px; } }
+    @media only screen and (max-width: 375px) {
+      .quienes-somos-box p {
+        font-size: 10px;
+        padding-top: 10px; } }

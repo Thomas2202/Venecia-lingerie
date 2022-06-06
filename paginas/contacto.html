@@ -38,16 +38,17 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./catalogo.html">Catalogo</a>
+                            <a class="nav-link" href="./quienes-somos.html">Quiénes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="./catalogo.html">Catalogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./ubicacion.html">Ubicación</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./quienes-somos.html">Quiénes somos</a>
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -56,15 +57,15 @@
     <!-- CONTACTO -->
     <main>
         <div>
-            <form class="form">
+            <form class="form"  action="https://formspree.io/f/xqknjzej"
+            method="POST">
                 <h2>CONTACTO</h2>
+                <label for="name">Nombre: </label>
+                <input type="text" name="name" placeholder="Nombre Completo">
                 <label for="email">Ingrese su correo electronico: </label>
-                <input type="email" name="email" placeholder="@gmail.com">
-                <label for="contraseña">Ingrese su contraseña: </label>
-                <input type="password" name="contraseña" placeholder="Contraseña">
+                <input type="email" placeholder="@gmail.com" name="_replyto">
                 <label for="consulta">¿Cual es su consulta?</label>
-                <textarea name="consulta" cols="30" rows="10" placeholder="Enviaremos la respuesta por correo."
-                    class="textarea"></textarea>
+                <textarea cols="30" rows="10" placeholder="Enviaremos la respuesta por correo." class="textarea" name="message"></textarea>
                 <input id="btn-form" type="submit" value="Enviar">
         </div>
         </form>
