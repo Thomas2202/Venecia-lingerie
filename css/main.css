@@ -73,6 +73,7 @@ ul {
   cursor: pointer;
   display: inline-block;
   border: 0;
+  border-radius: 20px;
   font-weight: bold;
   padding: 10px 20px;
   background: #ffd1d1;
@@ -143,7 +144,8 @@ ul {
   margin: 10px;
   background-image: linear-gradient(#f1c3c3, #e4dede); }
   .btn-cards:hover {
-    opacity: .8; }
+    opacity: .8;
+    color: black; }
 
 /* CATALOGO */
 .pics-catalogos {

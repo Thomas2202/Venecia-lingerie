@@ -25,6 +25,7 @@
     cursor: pointer;
     display: inline-block;
     border: 0;
+    border-radius: 20px;
     font-weight: bold;
     padding: 10px 20px;
     background: rgb(255, 209, 209);
@@ -112,5 +113,6 @@
     background-image: linear-gradient($color-header, rgb(228, 222, 222));
      &:hover {
         opacity: .8;
+        color: black;
     }
 }
